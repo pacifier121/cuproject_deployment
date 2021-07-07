@@ -1,0 +1,24 @@
+{
+    "name": "cuproject",
+    "version": "1.0.0",
+    "description": "CU project",
+    "main": "server.js",
+    "dependencies": {
+        "mysql2": "^2.2.5"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node app.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/pacifier121/cuproject.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/pacifier121/cuproject/issues"
+    },
+    "homepage": "https://github.com/pacifier121/cuproject#readme"
+}
