@@ -1,7 +1,14 @@
 footer {
-    background-color: hotpink;
+    border-top: solid white;
+    background-color: var(--bg-color);
     padding: 20px 25%;
     display: flex;
+}
+
+footer h3 {
+    margin: 0;
+    margin-bottom: 4px;
+    padding: 0;
 }
 
 footer div {

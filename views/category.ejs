@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Shopper</title>
+
+    <!-- Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Bootstrap Scripts-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- Fonts-Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.8.2/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Open+Sans:wght@300&family=Rubik:wght@800&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="/css/navbar_styles.css">
+    <link rel="stylesheet" href="/css/footer_styles.css">
+    <link rel="stylesheet" href="/css/category_styles.css">
+</head>
+
+<nav>
+    <div class="site-title">Simple Shopper</div>
+    <div class="list-items">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="/">Home</a></li>
+            <li class="nav-item"><a href="#categ">Categories</a></li>
+            <li class="nav-item"><a href="#help">Help</a></li>
+            <li class="nav-item"><a href="#cart"><i class="lni lni-cart"></i></a></li>
+        </ul>
+    </div>
+</nav>
+
+
+<div class="outer-container">
+    <h2>
+        <%= categ %>
+    </h2>
+    <div class="categ-container">
+        <div class="product-container">
+            <img class="product-link" src="<%= categories[0]['image'] %>" name="<%= categories[0]['id'] %>">
+            <h6>
+                <b>Title : </b>
+                <%= categories[0]['name']  %>
+            </h6>
+            <h6>
+                <b>Price : </b>
+                <%= categories[0]['price'] %>
+            </h6>
+            <h6>
+                <% if (categ == 'Books') { %>
+                    <b>Author : </b>
+                    <% } else { %>
+                        <b>Brand : </b>
+                        <% } %>
+                            <%= categories[0]['brand']  %>
+            </h6>
+            <h6><b>Rating : </b>
+                <%= categories[0]['rating']  %>
+            </h6>
+        </div>
+        <div class="product-container">
+            <img class="product-link" src="<%= categories[1]['image'] %>" name="<%= categories[1]['id'] %>">
+            <h6>
+                <b>Title : </b>
+                <%= categories[1]['name']  %>
+            </h6>
+            <h6>
+                <b>Price : </b>
+                <%= categories[1]['price'] %>
+            </h6>
+            <h6>
+                <% if (categ == 'Books') { %>
+                    <b>Author : </b>
+                    <% } else { %>
+                        <b>Brand : </b>
+                        <% } %>
+                            <%= categories[1]['brand']  %>
+            </h6>
+            <h6><b>Rating : </b>
+                <%= categories[1]['rating']  %>
+            </h6>
+        </div>
+        <% if (categories.length > 2) { %>
+            <div class="product-container">
+                <img class="product-link" src="<%= categories[2]['image'] %>" name="<%= categories[2]['id'] %>">
+                <h6>
+                    <b>Title : </b>
+                    <%= categories[2]['name']  %>
+                </h6>
+                <h6>
+                    <b>Price : </b>
+                    <%= categories[2]['price'] %>
+                </h6>
+                <h6>
+                    <% if (categ == 'Books') { %>
+                        <b>Author : </b>
+                        <% } else { %>
+                            <b>Brand : </b>
+                            <% } %>
+                                <%= categories[2]['brand']  %>
+                </h6>
+                <h6><b>Rating : </b>
+                    <%= categories[2]['rating']  %>
+                </h6>
+            </div>
+
+            <% } %>
+                <% if (categories.length > 3) { %>
+                    <div class="product-container">
+                        <img class="product-link" src="<%= categories[3]['image'] %>" name="<%= categories[3]['id'] %>">
+                        <h6>
+                            <b>Title : </b>
+                            <%= categories[3]['name']  %>
+                        </h6>
+                        <h6>
+                            <b>Price : </b>
+                            <%= categories[3]['price'] %>
+                        </h6>
+                        <h6>
+                            <% if (categ == 'Books') { %>
+                                <b>Author : </b>
+                                <% } else { %>
+                                    <b>Brand : </b>
+                                    <% } %>
+                                        <%= categories[3]['brand']  %>
+                        </h6>
+                        <h6><b>Rating : </b>
+                            <%= categories[3]['rating']  %>
+                        </h6>
+                    </div>
+
+                    <% } %>
+                        <% if (categories.length > 4) { %>
+                            <div class="product-container">
+                                <img class="product-link" src="<%= categories[4]['image'] %>" name="<%= categories[4]['id'] %>">
+                                <h6>
+                                    <b>Title : </b>
+                                    <%= categories[4]['name']  %>
+                                </h6>
+                                <h6>
+                                    <b>Price : </b>
+                                    <%= categories[4]['price'] %>
+                                </h6>
+                                <h6>
+                                    <% if (categ == 'Books') { %>
+                                        <b>Author : </b>
+                                        <% } else { %>
+                                            <b>Brand : </b>
+                                            <% } %>
+                                                <%= categories[4]['brand']  %>
+                                </h6>
+                                <h6>
+                                    <b>Rating : </b>
+                                    <%= categories[4]['rating']  %>
+                                </h6>
+                            </div>
+
+                            <% } %>
+                                <% if (categories.length > 5) { %>
+                                    <div class="product-container">
+                                        <img class="product-link" src="<%= categories[5]['image'] %>" name="<%= categories[5]['id'] %>">
+                                        <h6>
+                                            <b>Title : </b>
+                                            <%= categories[5]['name']  %>
+                                        </h6>
+                                        <h6>
+                                            <b>Price : </b>
+                                            <%= categories[5]['price'] %>
+                                        </h6>
+                                        <h6>
+                                            <% if (categ == 'Books') { %>
+                                                <b>Author : </b>
+                                                <% } else { %>
+                                                    <b>Brand : </b>
+                                                    <% } %>
+                                                        <%= categories[5]['brand']  %>
+                                        </h6>
+                                        <h6><b>Rating : </b>
+                                            <%= categories[5]['rating']  %>
+                                        </h6>
+                                    </div>
+
+                                    <% } %>
+
+    </div>
+</div>
+
+<form action="/" method="post" id="categ-form">
+    <input type="hidden" name="type" id="form-type">
+    <input type="hidden" name="value" id="form-value">
+</form>
+
+
+
+<footer>
+    <div>
+        <h3 class="contact-us">Contact us </h3>
+        <a class="footer-link" href="#">Facebook</a><br>
+        <a class="footer-link" href="#">Instagram</a><br>
+        <a class="footer-link" href="#">Github</a>
+    </div>
+    <div>
+        <h3 class="about-us">Get to know us </h3>
+        <a class="footer-link" href="#">About us</a><br>
+        <a class="footer-link" href="#">About website</a>
+    </div>
+</footer>
+
+<script src="/js/categ_events.js">
+</script>
+</body>
+
+</html>

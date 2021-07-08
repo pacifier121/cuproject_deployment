@@ -1,0 +1,22 @@
+
+
+ (130, "Himalaya Herbals Damage Repair Protein Conditioner","Beauty", "Himalaya","https://amzn.to/3qTXSff",4.1,132,20, "photos/beauty/3.jpg"),
+ (131, "Nivea Waterlily and Oil Shower Gel","Beauty", "Nivea","https://amzn.to/3hmE94M",4.5,334,20, "photos/beauty/4.jpg"),
+ (132, "Garnier Men Turbo Bright Facewash - Charcoal Skin Brightening Facewash","Beauty", "Garnier","https://amzn.to/3hnF0C6",4.3,397,30, "photos/beauty/5.jpg"),
+ (133, "Dove Cream Beauty Bar - Soft, Smooth, Moisturised Skin","Beauty", "Dove","https://amzn.to/36kKtne",4.5,272,20, "photos/beauty/6.jpg");
+
+
+(134, "Hero Kyoto 26T Single Speed 18 inches Frame Mountain Bike", "Fitness", "Hero", "https://amzn.to/3hMf56k", 3.7, 5799, 9, "photos/fitness/1.jpg"),
+(135, "Yonex Nanoray Light 18i Graphite Badminton Racquet", "Fitness", "Yonex", "https://amzn.to/3yy3G0F", 4.3, 1649, 41, "photos/fitness/2.jpg"),
+(136, "Nivia Storm Football", "Fitness", "Nivia", "https://amzn.to/2SRXnpo", 4, 364, 36, "photos/fitness/3.jpg"),
+(137, "Fitness Mantra - Yoga Mat for Gym Workout and Yoga Exercise", "Fitness", "Fitness Mantra", "https://amzn.to/3qWNi7s", 4, 449, 72, "photos/fitness/4.jpg"),
+(138, "Reach Air Bike Exercise Cycle With Moving Handles & Adjustable Cushioned Seat", "Fitness", "Reach", "https://amzn.to/3hMf56k", 4.2, 6899, 43, "photos/fitness/5.jpg");
+
+
+(139, "Mi 11X Pro 5G", "Mobile", "Redmi", "https://amzn.to/3dUVTlz", 3.9, 39999, 17, "photos/mobiles/1.jpg"),
+(140, "Apple iPhone 11", "Mobile", "Apple", "https://amzn.to/3xqzxAi", 4.6, 51999, 5, "photos/mobiles/2.jpg"),
+(141, "OnePlus 8T 5G", "Mobile", "One Plus", "https://amzn.to/3qPTaiI", 4.4, 38999, 9, "photos/mobiles/3.jpg"),
+(142, "Oppo F17", "Mobile", "Oppo", "https://amzn.to/3qRhAsb", 4.1, 38999, 19, "photos/mobiles/4.jpg"),
+(143, "Vivo V21 5G", "Mobile", "Vivo", "https://amzn.to/2TDRlcE", 4.2, 29999, 9, "photos/mobiles/5.jpg"),
+(144, "realme X7", "Mobile", "Realme", "https://amzn.to/3xrvqUm", 4.1, 17999, 18, "photos/mobiles/6.jpg");
+
