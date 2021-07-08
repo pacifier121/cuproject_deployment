@@ -25,7 +25,7 @@
 
     <link rel="stylesheet" href="/css/navbar_styles.css">
     <link rel="stylesheet" href="/css/footer_styles.css">
-    <link rel="stylesheet" href="/css/product_styles.css">
+    <link rel="stylesheet" href="/css/categories_styles.css">
 </head>
 
 <nav>
@@ -40,44 +40,54 @@
     </div>
 </nav>
 
-
 <div class="outer-container">
-    <div class="image-div">
-        <img src="<%= product[0]['image'] %>" alt="">
-    </div>
-    <div class="details-div">
-        <div>
-            <h3>
-                <%= product[0]['name'] %>
-            </h3>
-            <h5 class="brand-name">
-                <%= product[0]['brand'] %>
-            </h5>
-            <h4><b>Price : </b>
-                <span class="price"><%= product[0]['price'] %></span> (after
-                <%= product[0]['discount'] %>% discount)
-            </h4>
-            <h5>
-                <span clss="rating-text">Average Rating :</span>
-                <span class="rating"><%= product[0]['rating'] %></span>
-            </h5>
-            <h5 class="category">
-                Category -
-                <%= product[0]['category'] %>
-            </h5>
+    <h3 class="headline">Categories</h3>
+    <div class="inner-container">
+        <div class="category-container">
+            <img src="/photos/beauty-cover.jpg" class="category-link" name="Beauty" alt="">
+            <p>Beauty Products</p>
         </div>
-        <div>
-            <button id="add-to-cart" type="button" class="btn btn-outline-success btn-lg">Add to cart</button>
-            <a href="<%= product[0]['link'] %>" target="_blank"><button id="get-it-now" type="button" class="btn btn-outline-primary btn-lg">Get it now</button></a>
+        <div class="category-container">
+            <img src="/photos/electronics-cover.png" class="category-link" name="Electronics" alt="">
+            <p>Electronics</p>
+        </div>
+        <div class="category-container">
+            <img src="/photos/books-cover.jpg" class="category-link" name="Books" alt="">
+            <p>Books</p>
+        </div>
+        <div class="category-container">
+            <img src="/photos/mobile-cover.jpg" class="category-link" name="Mobile" alt="">
+            <p>Smart Phones</p>
+        </div>
+        <div class="category-container">
+            <img src="/photos/fashion-cover.png" class="category-link" name="Fashion" alt="">
+            <p>Fashion</p>
+        </div>
+        <div class="category-container">
+            <img src="/photos/appliances-cover.jpg" class="category-link" name="Appliances" alt="">
+            <p>Appliances</p>
+        </div>
+        <div class="category-container">
+            <img src="/photos/fitness-cover.png" class="category-link" name="Fitness" alt="">
+            <p>Fitness</p>
+        </div>
+        <div class="category-container">
+            <img src="/photos/kitchen-cover.jpg" class="category-link" name="Kitchen" alt="">
+            <p>Kitchen</p>
         </div>
     </div>
-
 </div>
 
-<form action="/" method="post" id="categ-form">
+
+
+
+
+
+<form action="/" method="post" id="categories-form">
     <input type="hidden" name="type" id="form-type">
     <input type="hidden" name="value" id="form-value">
 </form>
+
 
 
 
@@ -95,7 +105,7 @@
     </div>
 </footer>
 
-<script src="/js/categ_events.js">
+<script src="/js/categories_events.js">
 </script>
 </body>
 

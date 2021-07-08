@@ -1,0 +1,38 @@
+.outer-container {
+    padding: 5%;
+}
+
+.headline {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.inner-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 5%;
+    position: relative;
+}
+
+.category-container {
+    border-radius: 5px;
+    background-color: white;
+    padding: 20px;
+    margin: 1%;
+    text-align: center;
+}
+
+.category-container img {
+    margin-bottom: 20px;
+    width: 300px;
+    height: 200px;
+    object-fit: contain;
+}
+
+@media(max-width: 800px) {
+    .category-container {
+        width: 100%;
+    }
+}

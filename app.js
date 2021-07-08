@@ -46,7 +46,7 @@ app.get("/product", (req, res) => {
 
 app.get("/category", (req, res) => {
     console.log("GET request on /category");
-    res.render("category", {
+    res.render("categories", {
 
     })
 })
@@ -82,9 +82,18 @@ app.post("/", (req, res) => {
     }
 })
 
-app.post("/addtocart", (req, res) => {
-
-})
+// app.post("/categories", (req, res) => {
+//     const type = req.body.type;
+//     const value = req.body.value;
+//     console.log("POST request recieved on /categories");
+//     con.query('SELECT * FROM ' + table + " WHERE category = \"" + value + "\"", (err, result) => {
+//         if (err) throw err;
+//         res.render("category", {
+//             categories: result,
+//             categ: value
+//         })
+//     })
+// })
 
 app.listen(3000, () => {
     console.log('Successfully connected to server on port 3000');
