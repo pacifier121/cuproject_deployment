@@ -36,30 +36,6 @@ app.get("/", (req, res) => {
     })
 })
 
-app.get("/product", (req, res) => {
-    console.log("GET request on /product");
-    res.render("product", {
-
-    })
-})
-
-
-app.get("/category", (req, res) => {
-    console.log("GET request on /category");
-    res.render("categories", {
-
-    })
-})
-
-app.get("/cart", (req, res) => {
-    console.log("GET request on /cart");
-    res.render("cart", {
-
-    })
-})
-
-let fashion = ['clothes', 'hat', 'shoes'];
-
 app.post("/", (req, res) => {
     const type = req.body.type;
     const value = req.body.value;
@@ -82,18 +58,9 @@ app.post("/", (req, res) => {
     }
 })
 
-// app.post("/categories", (req, res) => {
-//     const type = req.body.type;
-//     const value = req.body.value;
-//     console.log("POST request recieved on /categories");
-//     con.query('SELECT * FROM ' + table + " WHERE category = \"" + value + "\"", (err, result) => {
-//         if (err) throw err;
-//         res.render("category", {
-//             categories: result,
-//             categ: value
-//         })
-//     })
-// })
+
+
+
 
 app.listen(3000, () => {
     console.log('Successfully connected to server on port 3000');
