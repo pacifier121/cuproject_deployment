@@ -36,12 +36,6 @@ app.get("/", (req, res) => {
     })
 })
 
-app.get("/categories", (req, res) => {
-    res.render("categories", {
-
-    })
-})
-
 app.post("/", (req, res) => {
     const type = req.body.type;
     const value = req.body.value;
