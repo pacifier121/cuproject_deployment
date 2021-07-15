@@ -67,7 +67,8 @@ app.post("/", (req, res) => {
 
 
 
+port = process.env.PORT || 3000
 
-app.listen(3000, () => {
-    console.log('Successfully connected to server on port 3000');
+app.listen(port, () => {
+    console.log(`Successfully connected to server on port ${port}`);
 })
